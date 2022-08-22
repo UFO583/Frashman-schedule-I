@@ -1,0 +1,72 @@
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    background-color: #000;
+}
+
+table {
+    position: absolute;
+    width: 1200px;
+    left: 50%;
+    top: 370px;
+    transform: translate(-50%, 0);
+    border: solid 5px white;
+    font-family: sans-serif;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+tr,
+th,
+td {
+    width: 200px;
+    height: 100px;
+    background-color: orange;
+    border: solid 2.5px white;
+}
+
+thead tr:nth-child(1) {
+    font-size: 30px;
+}
+
+div img {
+    z-index: 111;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 200px;
+    transition: all 1s;
+    cursor: pointer;
+    transform-origin: 10%;
+}
+
+div img:hover {
+    transform: scale(2.15);
+}
+
+.cow-left,
+.cow-right {
+    position: absolute;
+    top: 60%;
+    font-size: 80px;
+    transition: all 1s;
+}
+
+.cow-left {
+    left: 5%;
+}
+
+.cow-right {
+    right: 5%;
+}
+
+.cow-left:hover {
+    transform: scale(2);
+}
+
+.cow-right:hover {
+    transform: scale(2);
+}
